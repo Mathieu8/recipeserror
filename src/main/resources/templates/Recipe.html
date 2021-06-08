@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:title="recipe">Title</title>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>amount</th>
+    <th>unit of measure</th>
+    <th>ingredient</th>
+  </tr>
+  <tr th:each ="ingredient : ${ingredient}">
+    <td th:text="${ingredient.amount}">amount</td>
+    <td th:text="${ingredient.unitOfMeasure}">unitOfMeasure</td>
+    <td th:text="${ingredient.description}">description</td>
+  </tr>
+
+</table>
+
+</body>
+</html>
