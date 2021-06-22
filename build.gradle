@@ -16,14 +16,21 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'junit:junit:4.13.1'
+    implementation 'junit:junit:4.13.1'
     compileOnly 'org.projectlombok:lombok:1.18.20'
     annotationProcessor 'org.projectlombok:lombok:1.18.20'
+//    compile group: 'org.webjars', name: 'bootstrap', version: '5.0.1'
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'org.webjars:bootstrap:3.3.7-1'
+    implementation 'org.webjars:jquery:3.6.0'
 
     testCompileOnly 'org.projectlombok:lombok:1.18.20'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.apache.maven.plugins:maven-failsafe-plugin:2.22.2'
 }
 
 test {

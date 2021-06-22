@@ -32,4 +32,8 @@ public class Ingredient {
     public Ingredient() {
     }
 
+    public String print(){
+        return amount.toString() + " " + unitOfMeasure.getDescription() + " " +description;
+    }
+
 }
