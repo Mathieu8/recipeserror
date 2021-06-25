@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 
 class IngredientsCommandToIngredientsTest {
-    public static final Long ID_VALUE = Long.valueOf(1L);
+    public static final Long ID_VALUE = 1L;
     public static final String DESCRIPTION = "description";
     CategoryCommandToCategory conveter;
 
