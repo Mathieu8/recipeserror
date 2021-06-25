@@ -10,6 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Optional;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 @RunWith(SpringRunner.class)
@@ -22,9 +23,17 @@ class UnitOfMeasureRepositoryIT {
     void setUp() throws  Exception{
     }
 
+//    @Test
+//    void findByDescription() throws  Exception {
+//        Optional<UnitOfMeasure> unitOfMeasureOptional = unitOfMeasureRepository.findByDescription("Teaspoon");
+//        assertEquals("Teaspoon", unitOfMeasureOptional.get().getDescription());
+//    }
+
     @Test
-    void findByDescription() throws  Exception {
-        Optional<UnitOfMeasure> unitOfMeasureOptional = unitOfMeasureRepository.findByDescription("Teaspoon");
-        assertEquals("Teaspoon", unitOfMeasureOptional.get().getDescription());
+    public void findByDescription() throws Exception {
+
+        Optional<UnitOfMeasure> uomOptional = unitOfMeasureRepository.findByDescription("Teaspoon");
+
+        assertEquals("Teaspoon", uomOptional.get().getDescription());
     }
 }

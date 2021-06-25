@@ -92,10 +92,6 @@
                 <ul th:each="ingredient : ${recipe.ingredients} ">
                   <li th:text="|${ingredient.amount} ${ingredient.unitOfMeasure.description} ${ingredient.description}|">1 Cup of milk</li>
                   <li th:text="${ingredient.print()}">toString</li>
-<!--                  <ul th:each="catagorie : ${recipe.categories}">-->
-<!--                    <li th:text="${catagorie.description}">cat one</li>-->
-<!--                  <li>1 Teaspoon of chocolate</li>-->
-<!--                  <li>1 Teaspoon of Sugar</li>-->
                 </ul>
               </div>
             </div>
